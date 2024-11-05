@@ -54,6 +54,12 @@
     <footer>
         <p>&copy; 2024 Your Name</p>
     </footer>
-    <script src="js/scripts.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your message!');
+            // Implement form submission logic here
+        });
+    </script>
 </body>
 </html>
